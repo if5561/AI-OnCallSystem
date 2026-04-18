@@ -177,4 +177,13 @@ public class ChatService {
         logger.info("ReactAgent 对话完成，答案长度: {}", answer.length());
         return answer;
     }
+    /**
+     * agent.call(question)：把用户问题传给 AI 智能体
+     * ReactAgent 内部会自动做：
+     * 理解用户问题
+     * 判断是否需要调用工具
+     * 执行工具（如果需要）
+     * 整合工具结果
+     * 生成最终回答
+     */
 }
